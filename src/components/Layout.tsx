@@ -30,9 +30,11 @@ export default function Layout({ children }: LayoutProps) {
       <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-functional-green flex items-center justify-center text-white transition-transform group-hover:scale-105">
-              <ShieldCheck size={20} />
-            </div>
+            <img 
+              src="/logo.png" 
+              alt="FunctionalHealth Logo" 
+              className="w-10 h-10 object-contain"
+                />
             <span className="text-xl font-serif font-bold tracking-tight">
               <span className="text-functional-green">Functional</span>
               <span className="text-clinical-blue">Health</span>
